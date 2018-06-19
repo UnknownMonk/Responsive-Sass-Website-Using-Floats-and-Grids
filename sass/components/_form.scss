@@ -17,6 +17,11 @@
     display:block;
     transition: all .3s;
 
+    @include respond(tab-port) {
+      width: 100%;
+      
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -52,9 +57,12 @@
   &__radio-group {
     width:49%;
     display: inline-block;
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    }
 
-    
-  }
   &__radio-input {
     display: none;
   }
@@ -64,6 +72,8 @@
     font-size: $default-font-size;
     position: relative;
     padding-left:4.5rem;
+
+    
   }
   &__radio-button {
     height: 3rem;
