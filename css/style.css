@@ -695,6 +695,8 @@ body {
       .footer__copyright {
         width: 100%;
         float: none; } }
+  .footer img {
+    margin-bottom: 5rem; }
 
 .row {
   max-width: 114rem;
